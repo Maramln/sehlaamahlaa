@@ -1,0 +1,89 @@
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffcf67, #fba157);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur principal */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Image */
+.container img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Titre */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    color:#ff7700;
+    margin-bottom: 10px;
+}
+
+/* Texte d'introduction */
+.container p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input:focus {
+    border-color: #ff7700;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 94, 98, 0.5);
+}
+
+/* Boutons */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: #ffa75e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background: #ff7700;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

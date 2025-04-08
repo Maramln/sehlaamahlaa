@@ -1,0 +1,7 @@
+.main-container {
+    margin-left: 220px; /* espace pour sidebar */
+    padding: 20px;
+    background: #fff8e1;
+    min-height: calc(100vh - 120px); /* header + footer */
+  }
+  
