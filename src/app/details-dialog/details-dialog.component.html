@@ -1,0 +1,5 @@
+<h2>{{ data.name }}</h2>
+<img [src]="data.image" alt="{{ data.name }}" class="dialog-img">
+<p><strong>Détails :</strong> {{ data.details }}</p>
+<p *ngIf="data.ingredients"><strong>Ingrédients :</strong> {{ data.ingredients }}</p>
+<p *ngIf="data.steps"><strong>Étapes :</strong> {{ data.steps }}</p>
