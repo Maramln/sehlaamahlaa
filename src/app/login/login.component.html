@@ -6,20 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container" >
+    <div class="container"(ngSubmit)="on_sub()" >
         
             <img>
             <div class="form">
                 <h1 class="heading">login </h1>
                 <p>marahbe bikom fi sehla mehla</p> <br><br>
+                <label *ngIf="error">{{loginError}}</label>
                 
-                <label>l mail mte3ek : <input type="mail" class="input" placeholder="abcd@gmail.com"  name="email"></label><br>
+                <label>votre mail : <input type="mail" class="input" placeholder="abcd@gmail.com" [(ngModel)]="user.email" name="email"></label><br>
                 
-                <label> mot de passe mte3ek: <input type="password" class="input" placeholder="*****"  name="pass" > </label><br>
+                <label> votre mot de passe: <input type="password" class="input" placeholder="*****" [(ngModel)]="user.password" name="pass" > </label><br>
                 
-                <button type="submit" class="login-button" >connecti</button>
-                <input type="button" value="asna3 compte" class="login-button" >
-                <input type="button"  value="nsit l mot de passe?" class="login-button" >
+                <button type="submit" class="login-button" (click)="on_sub()" >connecti</button>
+                <input type="button" value="sahal hyetek b s'inscrire" class="login-button" (click)="openSinghn()" >
+                <input type="button"  value="nsit l mot de passe?" class="login-button" (click)="resetPassword()">
             </div>
         
     </div>

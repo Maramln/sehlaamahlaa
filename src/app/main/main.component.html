@@ -1,15 +1,25 @@
-<h2>🍳 Recettes Sehla Mehla</h2>
-<div class="card-list">
-  <div class="card" *ngFor="let recipe of recipes" (click)="showDetails(recipe)">
-    <img [src]="recipe.image" alt="{{ recipe.name }}" />
-    <h3>{{ recipe.name }}</h3>
-  </div>
-</div>
+<section class="section-recipes">
+  <h2>🍳 Recettes Sehla Mehla</h2>
 
-<h2>🍽️ Mekla Bnina</h2>
-<div class="card-list">
-  <div class="card" *ngFor="let meal of mealsForSale" (click)="showDetails(meal)">
-    <img [src]="meal.image" alt="{{ meal.name }}" />
-    <h3>{{ meal.name }}</h3>
+  <div class="card-list">
+    <div
+      class="card"
+      *ngFor="let recipe of recipes"
+      (click)="showDetails(recipe)"
+    >
+      
+      <h3 class="card-title">{{ recipe.nom }}</h3>
+    </div>
   </div>
-</div>
+  <div class="card-list">
+    <div
+      class="card"
+      *ngFor="let recipe of recipes"
+      (click)="showDetails(recipe)"
+    >
+      <h3 class="card-title">{{ recipe.nom }}</h3>
+    </div>
+  </div>
+</section>
+
+
